@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+    <a href="/about">About</a>
+    <a href="/contacts">Contacts</a><br>
+
+    {% block content %}
+    {{ flatpage.content }}
+    {% endblock content %}
+</body>
+</html>
