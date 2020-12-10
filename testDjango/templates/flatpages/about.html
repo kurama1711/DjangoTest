@@ -1,8 +1,11 @@
 {% extends 'flatpages/default.html' %}
 
-{% block title %} TITLE 1 {% endblock title %}
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
 
 {% block content %}
-<h1>About Us</h1>
-{{ flatpage.content }}
+<h3>Добро пожаловать!</h3>
+{{ flatpage.content }}<br>
+<font size="2">Использован шаблон: <a href="https://startbootstrap.com/template/the-big-picture">link</a></font>
 {% endblock content %}

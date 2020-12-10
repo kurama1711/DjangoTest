@@ -1,0 +1,11 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<h2>Повторение блока с контентом, смена шрифтов и размеров</h2>
+<font face="arial" size="5">{{ flatpage.content }}</font><br>
+<font face="cambria" size="4">{{ flatpage.content }}</font>
+{% endblock content %}
